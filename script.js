@@ -32,6 +32,11 @@ function replaceValuesInDOM() {
           in the year <span>${yearOfIn}</span>
   `;
   }
+   amount.value = "";
+  year.value = 1;
+  rangeInput.value = 0;
+  output.innerHTML = 0;
+  amount.focus();
 }
 
 document.querySelector(".calculBtn").addEventListener("click", () => {
