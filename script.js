@@ -24,12 +24,12 @@ function replaceValuesInDOM() {
     document.querySelector(".info").innerHTML = "you are missing something!!";
   } else {
     document.querySelector(".info").innerHTML = `
-   if you deposit <span>${amount.value}</span>,<br />
-          at an Interest rate of <span> ${+rangeInput.value},</span>%<br />
-          You will receive an amount of <span>${
+   if you deposit <span class="values">${amount.value}</span>,<br />
+          at an Interest rate of <span class="values"> ${+rangeInput.value}%</span>,<br />
+          You will receive an amount of <span class="values">${
             +amount.value * (+rangeInput.value / 100) * yearValue
           }</span>,<br />
-          in the year <span>${yearOfIn}</span>
+          in the year <span class="values">${yearOfIn}</span>
   `;
   }
    amount.value = "";
