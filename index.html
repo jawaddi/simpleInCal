@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Simple Interest Calculator</title>
+  </head>
+  <body>
+    <div class="ngo">
+      <h1 class="head_line">Simple Interest Calculator</h1>
+      <div class="inter_ngo">
+        <div class="item" id="item1">
+          <label for="Amount">Amount</label>
+          <input type="number" class="amount" name="amount" min="1" />
+        </div>
+        <div class="item" id="item2">
+          <label for="Rate">Interest Rate</label>
+          <div class="div12">
+            <input
+              type="range"
+              id="rangeInput"
+              name="Rate"
+              step="0.5"
+              min="0"
+              max="100"
+              value="0"
+            /><span class="output">0%</span>
+          </div>
+        </div>
+        <div class="item3" id="item3">
+          <label for="years">No. of Years</label>
+          <input
+            type="number"
+            id="principal"
+            class="year"
+            name="years"
+            min="1"
+            value="1"
+          />
+        </div>
+        <div class="item" id="item4">Interest : <span id="result"></span></div>
+        <div>
+          <button class="calculBtn">Compute Interest</button>
+        </div>
+      </div>
+
+      <div class="div1">
+        <p class="info"></p>
+        <p class="footer">&copy;Every Can Get Rich</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
