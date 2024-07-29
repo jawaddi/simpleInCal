@@ -32,8 +32,8 @@ function replaceValuesInDOM() {
           in the year <span class="values">${yearOfIn}</span>
   `;
   }
-   amount.value = "";
-  year.value = 1;
+  amount.value = "";
+  year.value = 2;
   rangeInput.value = 0;
   output.innerHTML = 0;
   amount.focus();
