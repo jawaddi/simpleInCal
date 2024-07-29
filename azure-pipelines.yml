@@ -6,8 +6,12 @@
 trigger:
 - master
 
+# pool:
+#   vmImage: ubuntu-latest
 pool:
-  vmImage: ubuntu-latest
+  name: Default
+  demands:
+    - agent.name -equals agent1
 
 steps:
 - task: ArchiveFiles@2
